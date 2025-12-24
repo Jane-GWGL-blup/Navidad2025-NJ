@@ -9,15 +9,16 @@
   <link rel="icon" href="assets/gift.png" type="image/x-icon">
 
 </head>
-<audio id="introMusic" preload="auto"></audio>
-<button id="musicToggle" class="music-btn">⏸️ Pausar canción</button>
-<button id="nextMusic">⏭️ Siguiente canción</button>
-<button id="prevMusic">⏮️ Canción anterior</button>
-
-<audio id="bgMusic" src="assets/staceyQ-twoofhearts.mp3" preload="auto" ></audio>
-<button id="giftMusicToggle" class="music-gift-btn gift-btn hidden">⏸️ Pausar canción</button>
 
 <body>
+  <audio id="introMusic" preload="auto"></audio>
+  <button id="musicToggle" class="music-btn">⏸️ Pausar canción</button>
+  <button id="nextMusic">⏭️ Siguiente canción</button>
+  <button id="prevMusic">⏮️ Canción anterior</button>
+
+  <audio id="bgMusic" src="assets/staceyQ-twoofhearts.mp3" preload="auto"></audio>
+  <!--   <button id="giftMusicToggle" class="music-gift-btn gift-btn hidden">⏸️ Pausar canción</button>
+ -->
   <div id="access-screen">
     <div class="access-box">
       <h2>Ingresa la clave 🎁</h2>
@@ -65,11 +66,14 @@
       <div class="ribbon-top-right"></div>
 
       <div class="gift-message" id="message"></div>
-      
+
     </div>
 
   </div>
-<div class="lyrics" id="lyrics"></div>
+  <div class="lyrics-container">
+    <button id="giftMusicToggle" class="music-gift-btn hidden">⏸️ Pausar canción</button>
+    <div class="lyrics" id="lyrics">♪♫♬♪</div>
+  </div>
 
   <script type="module" src="js/main.js"></script>
 

@@ -12,23 +12,34 @@
 :root {
     --angle: 0deg;
 }
-
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prohibido el scroll */
+    position: fixed; /* Extra seguridad para móviles */
+}
 body {
     margin: 0;
+    padding: 0;
     background: radial-gradient(circle at top, #2a2a72, #000);
-    background-size: 300% 300%;
+    background-size: cover;
     animation: bgFlow 10s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     font-family: "Georgia", serif;
+    overflow: hidden; /* Esto elimina el scroll por completo */
+    position: relative;
 }
 
 /* Contenedor */
 .container {
-    display: flex;
-    perspective: 1000px;
+/*     display: flex;
+    perspective: 1000px; */
+      position:relative;   /* ← IMPORTANTE */
+
 }
 
 @keyframes bgFlow {
